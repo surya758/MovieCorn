@@ -19,9 +19,6 @@ const styles = StyleSheet.create({
     fontSize: 26,
     fontFamily: Typography.FONT_FAMILY_SEMIBOLD,
   },
-  infoView: {
-    flexWrap: 'wrap',
-  },
 });
 
 export default styles;

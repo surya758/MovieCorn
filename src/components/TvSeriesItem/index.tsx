@@ -1,4 +1,4 @@
-import {Image, Pressable, Text, View} from 'react-native';
+import {Image, Pressable, Text} from 'react-native';
 import React, {useEffect, useState} from 'react';
 
 import type {TvSeriesInfoType} from '../../screens/Core/TvSeriesScreen/Components/TvSeriesItemComponent';
@@ -48,11 +48,9 @@ const MovieItem: React.FC<movieItemType> = ({id}) => {
         }}
         style={styles.posterStyle}
       />
-      <View style={styles.infoView}>
-        <Text style={styles.text} numberOfLines={2}>
-          {TvSeriesInfo?.original_name}
-        </Text>
-      </View>
+      <Text style={styles.text} numberOfLines={2}>
+        {TvSeriesInfo?.original_name}
+      </Text>
     </Pressable>
   );
 };
